@@ -1,0 +1,94 @@
+<app-navbar></app-navbar>
+
+<div style="
+    background-image: url(../../../assets/images/header/07.png);
+    height: 579px;
+    background-repeat: no-repeat;">
+    <div class="flat-header-blog">
+        <header class="header menu-bar header-blog hv-menu-type2">
+            <div class="container"> 
+                <div class="menu-bar-wrap clearfix">
+                   
+                    <div class="mobile-button"><span></span></div>
+                    <div class="header-menu">
+                       
+                    </div>
+                </div>
+            </div>
+        </header>
+        <br><br>
+        <br><br>
+        <div class="page-title page-title-blog">
+            <div class="page-title-inner">
+                <div class="breadcrumbs breadcrumbs-blog text-left">
+                    <div class="container">
+                        <div class="breadcrumbs-wrap">
+                            <ul class="breadcrumbs-inner">
+                                <li><a href="/">Accueil</a></li>
+                                <li><a href="contact">Contact</a></li>
+                            </ul>
+                            <div class="title" style="color: orange;">
+                                Contact
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- bg-header -->
+
+<div class="section-heading text-center">
+    <div class="title-section">
+        <div class="flat-title small heading-type12">Contact</div>
+    </div>
+
+</div>
+
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6"[formGroup]="form">
+            <form action="javascript:void(0)" (submit)="send()">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" class="form-control" formControlName="from_name" id="name" placeholder="Entre votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" formControlName="from_email" id="email" placeholder="Entre votre email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" formControlName="message" rows="4" placeholder="Entre votre message" required></textarea>
+                </div>
+               
+                <button type="submit" class="btn btn-warning">Envoyer</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <div style="text-align: center;">
+                <h5 style="font-size: larger;">Pour toute demande d'information n'hésitez pas à nous contacter</h5>
+                <span style="font-size: larger;">KASOUNDPROD</span>
+                <div style="text-align: left;">
+                    <span style="font-size: larger;">📍 Address </span>
+                  <p>6 rue croix pêchée 45000 Orléans</p>
+                <hr>
+                <span style="font-size: larger;">📧 Email </span>  <p>kasoundprod@gmail.com</p>
+                <hr>
+                <span style="font-size: larger;">📱 Telephone </span> <p>  (0033) 6-21-93-31-71</p>
+                <hr>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="col-md-12">
+    <!-- Embed the map here (replace the src attribute with your map embed code) -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5349.773317138873!2d1.923068!3d47.899879000000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4e4b661f4b469%3A0x34cd695c5d9e13c6!2zUnVlIENyb2l4IFDDqWNow6llLCA0NTAwMCBPcmzDqWFucywgRnJhbmNl!5e0!3m2!1sen!2sus!4v1709647955717!5m2!1sen!2sus"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+<app-footer></app-footer>
